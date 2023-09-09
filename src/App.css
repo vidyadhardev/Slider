@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/* CarouselComponent.css */
+
+/* Custom styles for the carousel */
+.carousel-root {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for the carousel slides */
+.carousel .slide {
+  background-color: #f0f0f0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  border-radius: 18px;
+  overflow: hidden;
+  
 }
 
-.App-link {
-  color: #61dafb;
+/* Legend style for slide captions */
+.carousel .legend {
+  color: #333;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for carousel indicators */
+.carousel .thumbs-wrapper {
+  margin-top: 20px;
+}
+/* .carousel .thumb {
+  border: 2px solid #888;
+  border-radius: 25%;
+  width: 8px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  margin-left: 90px;
+ 
+} */
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  background-color: #888;
 }

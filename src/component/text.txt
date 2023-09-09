@@ -1,0 +1,25 @@
+import React from 'react'
+import { RWebShare } from "react-web-share";
+import BlogPage from './component/BlogPage ';
+
+export default function App() {
+  return (
+    <div>
+      <h1>Web Share - share option</h1>
+
+      <BlogPage />
+      <RWebShare
+        data={{
+          text: "Web Share -page",
+          image: 'https://images.pexels.com/photos/42257/flowerful-flowery-flowerly-42257.jpeg',
+          url: "http://localhost:3000",
+          title: "React",
+        }}
+        onClick={() => console.log("shared successfully!")}
+      >
+        <button>Share on Web</button>
+      </RWebShare>
+    </div>
+
+  );
+}
